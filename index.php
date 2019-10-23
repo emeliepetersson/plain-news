@@ -27,18 +27,17 @@ usort($articles, 'dateCompare');
     <body>
         <h1>News feed</h1>
 
-        <!-- Detta ska bli en for loop som skapar en artikel per $articles arrayn, plus $articles['author']===$authors['fullname'] ska skriva ut full name och ID-->
+
         <?php foreach ($articles as $article) : ?>
            
             <article>
-
             <h1><?= $article['title'] ?></h1>
             <p><?= $article['content'] ?></p>
             <footer>
             Author| <?= $article['published_date'] ?> | <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
             </footer>
             </article>
-        
+    
         <?php endforeach; ?>
 
     </body>
