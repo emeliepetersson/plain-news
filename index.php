@@ -9,8 +9,11 @@ require __DIR__.'/functions.php';
 usort($articles, 'dateCompare');
 
 //echo "<pre>";
-//die(var_dump($articles));
+//die(var_dump(getAuthorName($authors, $articles)));
 //echo "</pre>";
+
+//print_r(getAuthorName($authors, $articles));
+
 
 
 ?>
@@ -25,13 +28,18 @@ usort($articles, 'dateCompare');
         <h1>News feed</h1>
 
         <!-- Detta ska bli en for loop som skapar en artikel per $articles arrayn, plus $articles['author']===$authors['fullname'] ska skriva ut full name och ID-->
-        <article>
-        <h1>Title</h1>
-        <p>Content</p>
-        <footer>
-        Author ID | Published date | <img src="like.png" alt="thumbs up like icon"> Like counter (the number of likes a news feed item has received)
-        </footer>
-        </article>
+        <?php foreach ($articles as $article) : ?>
+           
+            <article>
+
+            <h1><?= $article['title'] ?></h1>
+            <p><?= $article['content'] ?></p>
+            <footer>
+            Author| <?= $article['published_date'] ?> | <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
+            </footer>
+            </article>
+        
+        <?php endforeach; ?>
 
     </body>
 </html>
