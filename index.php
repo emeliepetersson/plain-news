@@ -38,14 +38,14 @@ usort($articles, 'dateCompare');
             <article>
             <h1><?= $article['title'] ?></h1>
             <p><?= $article['content'] ?></p>
+            <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" width="90%">
             <footer>
-
-        
-            <?= getAuthorName($article['author_id'], $authors); $article['published_date'] ?> | <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
+            <?= getAuthorName($article['author_id'], $authors). " " . $article['published_date'] . " " ?> <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
             </footer>
             </article>
     
         <?php endforeach; ?>
 
+        
     </body>
 </html>

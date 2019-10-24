@@ -17,12 +17,9 @@ function dateCompare($a, $b) {
 function getAuthorName($authorId, $authors) {
     
      foreach ($authors as $author) { 
-         
      
              if ($authorId === $author['id']) {
-          
                 $fullName = $author['first_name']. " " . $author['last_name'];
-
             }
     }
     
