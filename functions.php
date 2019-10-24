@@ -14,7 +14,7 @@ function dateCompare($a, $b) {
 
 //get author name
 
-function getAuthorName($authorId, $authors) {
+function getAuthorName(int $authorId, array $authors) :string {
     
      foreach ($authors as $author) { 
      
