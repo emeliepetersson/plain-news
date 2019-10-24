@@ -27,10 +27,14 @@ usort($articles, 'dateCompare');
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title></title>
+        <title>Marvel news</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>News feed</h1>
+        <header>
+            <img src="images/MARVEL.png" alt="">
+            <h1>News feed</h1>
+        </header>
 
 
         <?php foreach ($articles as $article) : ?>
@@ -38,14 +42,13 @@ usort($articles, 'dateCompare');
             <article>
             <h1><?= $article['title'] ?></h1>
             <p><?= $article['content'] ?></p>
-            <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" width="90%">
+            <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
             <footer>
             <?= getAuthorName($article['author_id'], $authors). " " . $article['published_date'] . " " ?> <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
             </footer>
             </article>
     
         <?php endforeach; ?>
-
         
     </body>
 </html>
