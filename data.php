@@ -6,23 +6,28 @@ declare(strict_types=1);
 $authors = [
     [
         'id' => 1,
-        'full_name' => 'Robert Downey Jr.'
+        'first_name' => 'Robert',
+        'last_name' => 'Downey Jr.'
     ],
     [
         'id' => 2,
-        'full_name' => 'Chris Evans'
+        'first_name' => 'Chris',
+        'last_name' => 'Evans'
     ],
     [
         'id' => 3,
-        'full_name' => 'Scarlett Johansson'
+        'first_name' => 'Scarlett',
+        'last_name' => 'Johansson'
     ],
     [
         'id' => 4,
-        'full_name' => 'Chris Hemsworth'
+        'first_name' => 'Chris',
+        'last_name' => 'Hemsworth'
     ],
     [
         'id' => 5,
-        'full_name' => 'Brie Larson'
+        'first_name' => 'Brie',
+        'last_name' => 'Larson'
     ]
 ];
 

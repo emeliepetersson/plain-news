@@ -7,30 +7,25 @@ declare(strict_types=1);
 function dateCompare($a, $b) {
     $t1 = strtotime($a['published_date']);
     $t2 = strtotime($b['published_date']);
-    return $t1 - $t2;
+    return $t2 - $t1;
 }    
 
 
 
 //get author name
 
-function getAuthorName($authors, $articles) {
+function getAuthorName($authorId, $authors) {
     
-    foreach ($articles as $article) { 
-   
-        foreach ($authors as $author) {
-           
-            if ($article['author_id'] === $author['id']) {
-                $names[] = $author['full_name'];
-                
-            }
-            
-        }
-    
-    }
+     foreach ($authors as $author) { 
+         
+     
+             if ($authorId === $author['id']) {
+          
+                $fullName = $author['first_name']. " " . $author['last_name'];
 
-    return $names;   
+            }
+    }
+    
+    return $fullName;
 }
     
-
-

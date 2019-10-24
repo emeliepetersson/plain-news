@@ -8,6 +8,11 @@ require __DIR__.'/functions.php';
 
 usort($articles, 'dateCompare');
 
+//getAuthorName($authors, $articles);
+
+
+//die(var_dump($articles[0]['author_id']));
+
 //echo "<pre>";
 //die(var_dump(getAuthorName($authors, $articles)));
 //echo "</pre>";
@@ -34,7 +39,9 @@ usort($articles, 'dateCompare');
             <h1><?= $article['title'] ?></h1>
             <p><?= $article['content'] ?></p>
             <footer>
-            Author| <?= $article['published_date'] ?> | <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
+
+        
+            <?= getAuthorName($article['author_id'], $authors); $article['published_date'] ?> | <img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?> 
             </footer>
             </article>
     
