@@ -1,5 +1,5 @@
 # plain-news
-<img src="https://media.giphy.com/media/2yxkSUWYzgnsPje3X8/giphy.gif">
+<img src="https://media.giphy.com/media/2yxkSUWYzgnsPje3X8/giphy.gif" width="100%">
 First assignment in PHP
 
 ## Assignment instructions
