@@ -36,3 +36,8 @@ The news feed items should be ordered based on the published date, so the latest
 - $ git clone https://github.com/Charmaine-wang/Fake-News.git.
 - Start your server.
 - Open the index.php file in your browser.
+
+## Testers
+
+## License
+The MIT License. See [LICENSE] (https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
