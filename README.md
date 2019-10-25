@@ -1,4 +1,5 @@
 # plain-news
+<img src="images/marvel.png" width="100%">
 First assignment in PHP
 
 ## Assignment instructions
