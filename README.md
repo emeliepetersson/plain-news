@@ -29,3 +29,9 @@ The news feed items should be ordered based on the published date, so the latest
 - Functions
 - Loops (for, while or foreach)
 - Output (echo, print etc.)
+
+## Installation instructions
+- Clone down the project to you computer:
+- $ git clone https://github.com/Charmaine-wang/Fake-News.git.
+- Start your server.
+- Open the index.php file in your browser.
