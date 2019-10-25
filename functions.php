@@ -3,26 +3,36 @@ declare(strict_types=1);
 // This is the file where you can keep all your functions. Remember to NOT
 // execute/run any functions in this file. Keep it dumb.
 
-//https://stackoverflow.com/questions/2910611/php-sort-a-multidimensional-array-by-element-containing-date
-function dateCompare($a, $b) {
-    $t1 = strtotime($a['published_date']);
-    $t2 = strtotime($b['published_date']);
-    return $t2 - $t1;
+
+/**
+ * Return a integer less than, equal to or greater than zero, 
+ * based on the diffenrence between two values of a given key in the given array.
+ *
+ * @param array $a
+ * @param array $b
+ * @return integer
+ */
+function dateCompare(array $a, array $b) :int {
+    $timeOne = strtotime($a['published_date']);
+    $timeTwo = strtotime($b['published_date']);
+    return $timeTwo - $timeOne;
 }    
 
 
 
-//get author name
-
-function getAuthorName(int $authorId, array $authors) :string {
-    
-     foreach ($authors as $author) { 
-     
-             if ($authorId === $author['id']) {
-                $fullName = $author['first_name']. " " . $author['last_name'];
+/**
+ * Return name where given id matches id in given array
+ *
+ * @param integer $id
+ * @param array $people
+ * @return string
+ */
+function getName(int $id, array $people) :string {
+     foreach ($people as $person) { 
+             if ($id === $person['id']) {
+                $fullName = $person['first_name']. " " . $person['last_name'];
             }
     }
-    
     return $fullName;
 }
     
