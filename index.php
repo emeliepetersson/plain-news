@@ -16,7 +16,7 @@ require __DIR__.'/header.php';
     <p><?= $article['content'] ?></p>
     <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
     <footer>
-    <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
+    <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
     </footer>
     </article>
 <?php endforeach; ?>
