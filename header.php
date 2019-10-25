@@ -19,7 +19,7 @@ usort($articles, 'dateCompare');
         <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri:100|Karla|Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="main-header">
             <nav class="mobile">
                 <a href=""><img src="images/hamburger-icon.png" alt="hamburger icon" loading="lazy"></a>
             </nav>
