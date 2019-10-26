@@ -43,7 +43,18 @@ function getName(int $id, array $people) :string {
  * @param string $text
  * @return string
  */
-function getSubstring(string $text) :string {
-    $subString = substr($text, 0, 250)."...";
+function getFirstSubstring(string $text) :string {
+    $subString = substr($text, 0, 250);
+    return $subString;
+}
+
+/**
+ * get the characters in a string starting from 250.
+ *
+ * @param string $text
+ * @return string
+ */
+function getLastSubstring(string $text) :string {
+    $subString = substr($text, 250);
     return $subString;
 }
