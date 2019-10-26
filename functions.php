@@ -35,4 +35,15 @@ function getName(int $id, array $people) :string {
     }
     return $fullName;
 }
-    
+
+
+/**
+ * get the first 250 characters from a string.
+ *
+ * @param string $text
+ * @return string
+ */
+function getSubstring(string $text) :string {
+    $subString = substr($text, 0, 250)."...";
+    return $subString;
+}

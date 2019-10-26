@@ -15,7 +15,7 @@ require __DIR__.'/header.php';
     <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
     </div>
     </header>
-    <p><?= $article['content'] ?></p>
+    <p><?= getSubstring($article['content']); ?></p>
     <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
     </article>
 <?php endforeach; ?>
