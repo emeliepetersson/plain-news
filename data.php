@@ -39,7 +39,8 @@ $articles = [
         'published_date' => '2019-05-01',
         'like_counter' => 24569,
         'image' => 'images/capmarv.jpg',
-        'alt_text' => 'Captain Marvel poster'
+        'alt_text' => 'Captain Marvel poster',
+        'category' => 'Comics'
     ],
     [
         'title' => 'Cake donut candy canes.',
@@ -48,7 +49,8 @@ $articles = [
         'published_date' => '2019-09-09',
         'like_counter' => 1,
         'image' => 'images/futurefight.jpg',
-        'alt_text' => 'Future fight poster'
+        'alt_text' => 'Future fight poster',
+        'category' => 'Movies'
     ],
     [
         'title' => 'Jelly-o toffee marshmallow.',
@@ -57,7 +59,8 @@ $articles = [
         'published_date' => '2019-02-15',
         'like_counter' => 598,
         'image' => 'images/marauders.jpg',
-        'alt_text' => 'Marauders poster'
+        'alt_text' => 'Marauders poster',
+        'category' => 'Comics'
     ],
     [
         'title' => 'Biscuit apple pie sweet roll cake tootsie roll.',
@@ -66,7 +69,8 @@ $articles = [
         'published_date' => '2019-10-11',
         'like_counter' => 34,
         'image' => 'images/wasteland.jpg',
-        'alt_text' => 'Wasteland poster'
+        'alt_text' => 'Wasteland poster',
+        'category' => 'Podcast'
     ],
     [
         'title' => 'Danish cake sweet apple pie caramels.',
@@ -75,7 +79,8 @@ $articles = [
         'published_date' => '2019-08-30',
         'like_counter' => 3672,
         'image' => 'images/imortalhulk.jpg',
-        'alt_text' => 'Imortal hulk poster'
+        'alt_text' => 'Imortal hulk poster',
+        'category' => 'Movies'
     ],
     [
         'title' => 'Chupa chups sugar plum gingerbread chocolate bar gummies.',
@@ -84,7 +89,8 @@ $articles = [
         'published_date' => '2019-05-08',
         'like_counter' => 126738,
         'image' => 'images/starwars.jpg',
-        'alt_text' => 'Star wars poster'
+        'alt_text' => 'Star wars poster',
+        'category' => 'Podcast'
     ],
     [
         'title' => 'Macaroon soufflé tootsie roll.',
@@ -93,7 +99,8 @@ $articles = [
         'published_date' => '2019-02-12',
         'like_counter' => 8290,
         'image' => 'images/comicbook-page.jpg',
-        'alt_text' => 'Page in a comic book'
+        'alt_text' => 'Page in a comic book',
+        'category' => 'Movies'
     ],
     [
         'title' => 'Dragée lemon drops bear claw jelly chupa chups.',
@@ -102,7 +109,8 @@ $articles = [
         'published_date' => '2018-07-09',
         'like_counter' => 24,
         'image' => 'images/podcast-poster.jpg',
-        'alt_text' => 'Podcast poster'
+        'alt_text' => 'Podcast poster',
+        'category' => 'Podcast'
     ],
     [
         'title' => 'Lemon drops cotton candy powder cotton candy ice cream.',
@@ -111,7 +119,8 @@ $articles = [
         'published_date' => '2018-12-04',
         'like_counter' => 3840,
         'image' => 'images/comics.jpg',
-        'alt_text' => 'Marvel comics'
+        'alt_text' => 'Marvel comics',
+        'category' => 'Movies'
     ],
     [
         'title' => 'Danish wafer tart brownie cookie icing.',
@@ -120,6 +129,7 @@ $articles = [
         'published_date' => '2018-03-28',
         'like_counter' => 162784,
         'image' => 'images/maryjane.jpg',
-        'alt_text' => 'Mary Jane poster'
+        'alt_text' => 'Mary Jane poster',
+        'category' => 'Comics'
     ]
 ];

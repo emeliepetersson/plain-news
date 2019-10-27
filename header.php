@@ -7,6 +7,10 @@ require __DIR__.'/functions.php';
 //§articles array until every given key has been compared. The usort function will sort the array by the returned integers.
 usort($articles, 'dateCompare');
 
+
+$uniqueValues = getUniqueValues($articles);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,8 +34,8 @@ usort($articles, 'dateCompare');
             <nav class="desktop">
                 <ul>
                     <li><a href="index.php"  class="active">Home</a></li>
-                    <?php foreach ($authors as $author) : ?>
-                        <li><a href="#"><?= $author['first_name']. " " . $author['last_name']; ?></a></li>
+                    <?php foreach ($uniqueValues as $value) : ?>
+                        <li><a href="#"><?= $value; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </nav>

@@ -36,3 +36,11 @@ function getName(int $id, array $people) :string {
     return $fullName;
 }
 
+
+function getUniqueValues (array $array):array {
+    foreach ($array as $row) {
+        $values[] = $row['category'];
+    }
+    $uniqueValues = array_unique($values);
+    return $uniqueValues;
+}
