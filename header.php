@@ -26,6 +26,14 @@ $uniqueValues = getUniqueValues($articles);
         <header class="main-header">
             <nav class="mobile">
                 <a href=""><img src="images/hamburger-icon.png" alt="hamburger icon" loading="lazy"></a>
+                <div>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <?php foreach ($uniqueValues as $value) : ?>
+                            <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             </nav>
             <div>
             <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">

@@ -27,7 +27,7 @@ nav {
 nav img{
     display: block;
 }
-nav ul {
+.desktop {
     display: none;
 }
 article {
@@ -82,7 +82,7 @@ article a:hover {
     p {
         padding: 0 1em 1em;
     }
-    .main-header nav img {
+    .mobile {
         display: none;
     }
     .main-header div {
@@ -92,6 +92,9 @@ article a:hover {
     }
     .main-header div h1 {
         font-size: 4em;
+    }
+    .desktop {
+        display: initial;
     }
     nav ul {
         display: flex;

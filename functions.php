@@ -19,7 +19,6 @@ function dateCompare(array $a, array $b) :int {
 }    
 
 
-
 /**
  * Return name where given id matches id in given array
  *
@@ -37,7 +36,14 @@ function getName(int $id, array $people) :string {
 }
 
 
-function getUniqueValues (array $array):array {
+/**
+ * Get only the unique values from given array and
+ * return new array with these values
+ *
+ * @param array $array
+ * @return array
+ */
+function getUniqueValues(array $array):array {
     foreach ($array as $row) {
         $values[] = $row['category'];
     }
