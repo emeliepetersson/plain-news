@@ -31,12 +31,4 @@ $uniqueValues = getUniqueValues($articles);
             <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">
             <h1>News feed</h1>
             </div>
-            <nav class="desktop">
-                <ul>
-                    <li><a href="index.php"  class="active">Home</a></li>
-                    <?php foreach ($uniqueValues as $value) : ?>
-                        <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
-            </nav>
-        </header>
+            
