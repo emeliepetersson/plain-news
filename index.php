@@ -15,15 +15,11 @@ require __DIR__.'/header.php';
             <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
         </div>
     </header>
-    <p>
-        <?= getFirstSubstring($article['content']); ?>
-        <a href="#" class="content-show">See more.</a>
+    <p class="article-content">
+        <?= $article['content']; ?>
     </p>
-    <div class="content">
-	    <p>.
-            <?= getLastSubstring($article['content']); ?>
-        </p>
-	    <p><a href="#" class="content-hide">Hide content.</a></p>
+    <a href="#" class="content-show">See more.</a>
+	<a href="#" class="content-hide">Hide content.</a>
     </div>
     </div>
     <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
