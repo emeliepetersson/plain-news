@@ -35,7 +35,7 @@ $uniqueValues = getUniqueValues($articles);
                 <ul>
                     <li><a href="index.php"  class="active">Home</a></li>
                     <?php foreach ($uniqueValues as $value) : ?>
-                        <li><a href="#"><?= $value; ?></a></li>
+                        <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </nav>

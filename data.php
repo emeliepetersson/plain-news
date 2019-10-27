@@ -70,7 +70,7 @@ $articles = [
         'like_counter' => 34,
         'image' => 'images/wasteland.jpg',
         'alt_text' => 'Wasteland poster',
-        'category' => 'Podcast'
+        'category' => 'Podcasts'
     ],
     [
         'title' => 'Danish cake sweet apple pie caramels.',
@@ -90,7 +90,7 @@ $articles = [
         'like_counter' => 126738,
         'image' => 'images/starwars.jpg',
         'alt_text' => 'Star wars poster',
-        'category' => 'Podcast'
+        'category' => 'Podcasts'
     ],
     [
         'title' => 'Macaroon soufflé tootsie roll.',
@@ -110,7 +110,7 @@ $articles = [
         'like_counter' => 24,
         'image' => 'images/podcast-poster.jpg',
         'alt_text' => 'Podcast poster',
-        'category' => 'Podcast'
+        'category' => 'Podcasts'
     ],
     [
         'title' => 'Lemon drops cotton candy powder cotton candy ice cream.',
