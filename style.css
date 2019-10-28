@@ -7,6 +7,19 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+ul {
+    list-style-type: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+.active {
+    color: rgb(212, 25, 25);
+}
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
 }
@@ -29,6 +42,16 @@ nav img{
 }
 .desktop {
     display: none;
+}
+#mobile-nav-items {
+    display: none;
+    text-align: left;
+    padding-top: 1em;
+    margin: 0;
+}
+#mobile-nav-items ul{
+    padding-left:0;
+    font-size: 1.5em;
 }
 article {
     background-color: rgba(248, 247, 245, 0.678);
@@ -62,7 +85,6 @@ p {
 article a {
     display: inline-block;
     margin: 0.5em 0 1em 1em;
-    text-decoration: none;
     font-size: 1.3em;
 }
 
@@ -99,20 +121,8 @@ article a:hover {
     nav ul {
         display: flex;
         justify-content: center;
-        list-style-type: none;
     }
     nav ul li {
         padding: 0 0.5em;
         font-size: 1.2em;
     }
-    nav ul li a {
-        color: black;
-        text-decoration: none;
-    }
-    .active {
-        color: rgb(212, 25, 25);
-    }
-    nav ul li a:hover {
-        color: white;
-    }
-}

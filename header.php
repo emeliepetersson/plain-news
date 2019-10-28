@@ -25,8 +25,8 @@ $uniqueValues = getUniqueValues($articles);
     <body>
         <header class="main-header">
             <nav class="mobile">
-                <a href=""><img src="images/hamburger-icon.png" alt="hamburger icon" loading="lazy"></a>
-                <div>
+                <img src="images/hamburger-icon.png" alt="hamburger navigation menu icon" loading="lazy" id="hamburger-icon"></<img>
+                <div id="mobile-nav-items">
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <?php foreach ($uniqueValues as $value) : ?>

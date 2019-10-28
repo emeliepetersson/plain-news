@@ -52,7 +52,21 @@ function showHide() {
 	
 }
 
+const hamburgerIcon = document.getElementById('hamburger-icon');
 
+hamburgerIcon.onclick = toggleMenu;
+
+
+function toggleMenu() {
+	const menuItems = document.getElementById('mobile-nav-items');    
+		
+		if(menuItems.style.display == "none") { // if menuItems is hidden, show it.
+		  menuItems.style.display = "block";
+		}
+		else { // if is menuItems is displayed, hide it.
+		  menuItems.style.display = "none";
+		}
+}
 
 
 
