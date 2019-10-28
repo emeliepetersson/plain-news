@@ -35,8 +35,6 @@ require __DIR__.'/header.php';
             <?= $article['content']; ?>
         </p>
         <button class="show-hide">Show more</button>
-        </div>
-        </div>
         <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
     <?php endif; ?>
     </article>
