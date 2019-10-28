@@ -28,9 +28,8 @@ a:hover, button:hover {
 .active {
     color: black;
 }
-article figure > img {
-    width: 100%;
-}
+
+/* Main header */
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
     background-color: white;
@@ -68,6 +67,8 @@ nav img{
     padding-top: 1em;
     margin: 0;
 }
+
+/* Articles */
 article {
     background-color: white;
     margin: 1em;
@@ -99,21 +100,22 @@ p {
 .content-hide {
     display: none;
 }
+article figure > img {
+    width: 100%;
+}
 
+
+/* Media Queries */
 @media only screen and (min-width: 700px) {
     .main-grid-index {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    figure {
-        height: 15em;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
+
+    /* Main header */
     .mobile {
         display: none;
-    }
+    }    
     .main-header div {
         display: flex;
         justify-content: center;
@@ -133,9 +135,20 @@ p {
         padding: 0 0.5em;
         font-size: 1.5em;
     }
+
+    /* Articles */
+    figure {
+        height: 15em;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
     .categories article {
         width: 80%;
         margin: 2em auto;
+    }
+    p {
+        padding: 0 1em 1em;
     }
 }
 
@@ -144,12 +157,11 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* Articles */ 
     .categories article {
         width: 50%;
         margin: 2em auto;
-    }
-    p {
-        padding: 0 1em 1em;
     }
 }
 
