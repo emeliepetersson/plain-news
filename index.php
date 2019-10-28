@@ -22,7 +22,7 @@ require __DIR__.'/header.php';
     <header class="article-header">
         <h1><?= $article['title'] ?></h1>
         <div>
-            <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
+            <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon" class="like"> <?= $article['like_counter'] ?></div> 
         </div>
     </header>
     <p class="article-content">
@@ -32,7 +32,9 @@ require __DIR__.'/header.php';
 	<a href="#" class="content-hide">Hide content.</a>
     </div>
     </div>
-    <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
+    <figure>
+    <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy">
+    </figure>
     </article>
 <?php endforeach; ?>
 </main>

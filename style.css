@@ -15,11 +15,15 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: white;
+    color: rgb(185, 146, 146);
 }
 .active {
     color: black;
 }
+article figure > img {
+    width: 100%;
+}
+
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
 }
@@ -81,22 +85,29 @@ p {
 .content-hide {
     display: none;
 }
-
 article a {
     display: inline-block;
     margin: 0.5em 0 1em 1em;
     font-size: 1.3em;
 }
 
-article a:hover {
-    color: rgb(94, 16, 16);
-}
-
 @media only screen and (min-width: 700px) {
     .main-grid-index {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: flex-start;
+    }
+    figure {
+        height: 15em;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .main-grid-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .categories article {
         width: 50%;
@@ -119,11 +130,13 @@ article a:hover {
     .desktop {
         display: initial;
     }
-    nav ul {
+    .desktop ul {
         display: flex;
         justify-content: center;
     }
-    nav ul li {
+    .desktop ul li {
         padding: 0 0.5em;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
+}
+
