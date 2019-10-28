@@ -133,6 +133,10 @@ p {
         padding: 0 0.5em;
         font-size: 1.5em;
     }
+    .categories article {
+        width: 80%;
+        margin: 2em auto;
+    }
 }
 
 @media only screen and (min-width: 900px) {
