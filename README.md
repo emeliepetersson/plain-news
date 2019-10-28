@@ -40,6 +40,8 @@ The news feed items should be ordered based on the published date, so the latest
 ## Extra
 
 ## Testers
+- Julia Karlsson
+- Camilla Kylmänen
 
 ## License
 The MIT License. See [LICENSE](https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
