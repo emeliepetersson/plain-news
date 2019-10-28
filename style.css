@@ -3,18 +3,26 @@
     margin: 0;
 }
 body {
-    background-color: rgb(241, 235, 235);
+    background-color: rgb(32, 30, 30);
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 ul {
     list-style-type: none;
 }
-a {
+button {
+    all: unset;
+    margin: 1em;
+}
+a, button {
     color: rgb(212, 25, 25);
     text-decoration: none;
+    font-size: 1.3em;
 }
-a:hover {
+button:active {
+    border: none;
+}
+a:hover, button:hover {
     color: rgb(185, 146, 146);
 }
 .active {
@@ -23,9 +31,9 @@ a:hover {
 article figure > img {
     width: 100%;
 }
-
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
+    background-color: white;
 }
 .main-header div {
     text-align: center;
@@ -58,9 +66,9 @@ nav img{
     font-size: 1.5em;
 }
 article {
-    background-color: rgba(248, 247, 245, 0.678);
+    background-color: white;
     margin: 1em;
-    box-shadow: 1px 1px 5px rgba(104, 102, 102, 0.568);
+    box-shadow: 2px 2px 7px rgba(206, 170, 93, 0.568);
 }
 .article-header div {
     display: inline-block;
@@ -82,13 +90,11 @@ p {
     height: 4.7em;
     overflow: hidden;
 }
+.article-content.show {
+    height: 100%;
+}
 .content-hide {
     display: none;
-}
-article a {
-    display: inline-block;
-    margin: 0.5em 0 1em 1em;
-    font-size: 1.3em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -101,20 +107,6 @@ article a {
         overflow: hidden;
         margin: 0;
         padding: 0;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .main-grid-index {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .categories article {
-        width: 50%;
-        margin: 2em auto;
-    }
-    p {
-        padding: 0 1em 1em;
     }
     .mobile {
         display: none;
@@ -137,6 +129,20 @@ article a {
     .desktop ul li {
         padding: 0 0.5em;
         font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .main-grid-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .categories article {
+        width: 50%;
+        margin: 2em auto;
+    }
+    p {
+        padding: 0 1em 1em;
     }
 }
 

@@ -1,15 +1,10 @@
 
 
-const content = document.getElementsByClassName('article-content');
+//const content = document.getElementsByClassName('article-content');
 
-const contentShow = document.getElementsByClassName('content-show');
+const contentShow = document.getElementsByClassName('show-hide');
 for (let i = 0; i < contentShow.length; i++) {
 	contentShow[i].onclick= showHide;
-}
-
-const contentHide = document.getElementsByClassName('content-hide');
-for (let i = 0; i < contentHide.length; i++) {
-	contentHide[i].onclick= showHide;
 }
 
 
@@ -17,39 +12,20 @@ for (let i = 0; i < contentHide.length; i++) {
  * Show more content when element with class "content-show" is clicked,
  * and show less content when element with class "content-hide" is clicked.
  */
-function showHide() {
-	
-	for (let i = 0; i < contentShow.length; i++) {
-	
-		
-		
-		if (contentShow[i].style.display != 'none') {
-			contentShow[i].style.display = 'none';
+function showHide(event) {
 
-			for (let i = 0; i < content.length; i++) {
-				content[i].style.height = "100%";
-				
-			}
-			for (let i = 0; i < contentHide.length; i++) {
-				contentHide[i].style.display = "inline-block";
-				
-			}
+	const targetContent = event.currentTarget.parentElement.querySelector('.article-content');
+	const button = event.currentTarget.parentElement.querySelector('.show-hide');
 
+	targetContent.classList.toggle('show');
+
+		if (targetContent.classList.contains('show')) {
+			button.textContent = "Hide content";
+			
 		}
 		else {
-			contentShow[i].style.display = 'inline-block';
-
-			for (let i = 0; i < content.length; i++) {
-				content[i].style.height = '4.7em';
-				
-			}
-			for (let i = 0; i < contentHide.length; i++) {
-				contentHide[i].style.display = "none";
-				
-			}
+			button.textContent = "Show more";
 		}
-	}
-	
 }
 
 

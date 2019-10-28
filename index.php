@@ -28,8 +28,7 @@ require __DIR__.'/header.php';
     <p class="article-content">
         <?= $article['content']; ?>
     </p>
-    <a href="#" class="content-show">See more.</a>
-	<a href="#" class="content-hide">Hide content.</a>
+    <button class="show-hide">Show more</button>
     </div>
     </div>
     <figure>
