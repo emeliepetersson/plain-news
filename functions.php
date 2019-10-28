@@ -1,7 +1,5 @@
 <?php
 declare(strict_types=1);
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
 
 
 /**
@@ -37,16 +35,16 @@ function getName(int $id, array $people) :string {
 
 
 /**
- * Get only the unique values from given array and
+ * Get unique categories from given array and
  * return new array with these values
  *
- * @param array $array
+ * @param array $articles
  * @return array
  */
-function getUniqueValues(array $array):array {
-    foreach ($array as $row) {
-        $values[] = $row['category'];
+function getUniqueCategories(array $articles):array {
+    foreach ($articles as $article) {
+        $categories[] = $article['category'];
     }
-    $uniqueValues = array_unique($values);
-    return $uniqueValues;
+    $uniqueCategories = array_unique($categories);
+    return $uniqueCategories;
 }

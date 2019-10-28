@@ -8,7 +8,7 @@ require __DIR__.'/functions.php';
 usort($articles, 'dateCompare');
 
 
-$uniqueValues = getUniqueValues($articles);
+$uniqueCategories = getUniqueCategories($articles);
 
 
 ?>
@@ -29,8 +29,8 @@ $uniqueValues = getUniqueValues($articles);
                 <div class="mobile-nav-items">
                     <ul>
                         <li><a href="index.php">Home</a></li>
-                        <?php foreach ($uniqueValues as $value) : ?>
-                            <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
+                        <?php foreach ($uniqueCategories as $category) : ?>
+                            <li><a href="<?= $category; ?>.php"><?= $category; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

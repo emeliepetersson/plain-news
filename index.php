@@ -6,8 +6,8 @@ require __DIR__.'/header.php';
     <nav class="desktop">
         <ul>
             <li><a href="index.php"  class="active">Home</a></li>
-            <?php foreach ($uniqueValues as $value) : ?>
-                <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
+            <?php foreach ($uniqueCategories as $category) : ?>
+                <li><a href="<?= $category; ?>.php"><?= $category; ?></a></li>
             <?php endforeach; ?>
         </ul>
     </nav>

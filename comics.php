@@ -6,11 +6,11 @@ require __DIR__.'/header.php';
 <nav class="desktop">
         <ul>
             <li><a href="index.php">Home</a></li>
-            <?php foreach ($uniqueValues as $value) : ?>
-                <?php if ($value === 'Comics') : ?>
-                    <li><a href="<?= $value; ?>.php" class="active"><?= $value; ?></a></li>
+            <?php foreach ($uniqueCategories as $category) : ?>
+                <?php if ($category === 'Comics') : ?>
+                    <li><a href="<?= $category; ?>.php" class="active"><?= $category; ?></a></li>
                 <?php else : ?>
-                    <li><a href="<?= $value; ?>.php"><?= $value; ?></a></li>
+                    <li><a href="<?= $category; ?>.php"><?= $category; ?></a></li>
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
