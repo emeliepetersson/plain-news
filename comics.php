@@ -20,6 +20,7 @@ require __DIR__.'/header.php';
     </nav>
 </header>
 
+<main class="categories">
 <?php foreach ($articles as $article) : ?>
     <article>
     <?php if ($article['category'] === 'Comics') : ?>
@@ -40,6 +41,7 @@ require __DIR__.'/header.php';
     <?php endif; ?>
     </article>
 <?php endforeach; ?>
+</main>
         
 <?php
 

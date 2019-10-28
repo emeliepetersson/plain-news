@@ -11,14 +11,14 @@ ul {
     list-style-type: none;
 }
 a {
-    color: black;
+    color: rgb(212, 25, 25);
     text-decoration: none;
 }
 a:hover {
     color: white;
 }
 .active {
-    color: rgb(212, 25, 25);
+    color: black;
 }
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
@@ -89,17 +89,18 @@ article a {
 }
 
 article a:hover {
-    color: rgb(216, 32, 32);
+    color: rgb(94, 16, 16);
 }
 
 @media only screen and (min-width: 700px) {
-    body {
+    .main-grid-index {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
     }
-    .main-header {
-        grid-column: 1 / 3;
+    .categories article {
+        width: 50%;
+        margin: 2em auto;
     }
     p {
         padding: 0 1em 1em;

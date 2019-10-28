@@ -16,6 +16,7 @@ require __DIR__.'/header.php';
     </nav>
 </header>
 
+<main class="main-grid-index">
 <?php foreach ($articles as $article) : ?>
     <article>
     <header class="article-header">
@@ -34,6 +35,7 @@ require __DIR__.'/header.php';
     <img src="<?= $article['image'] ?>" alt="<?= $article['alt_text'] ?>" loading="lazy" width="100%">
     </article>
 <?php endforeach; ?>
+</main>
         
 <?php
 

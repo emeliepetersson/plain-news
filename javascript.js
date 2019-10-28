@@ -14,7 +14,7 @@ for (let i = 0; i < contentHide.length; i++) {
 
 
 /**
- * Function that show more content when element with class "content-show" is clicked,
+ * Show more content when element with class "content-show" is clicked,
  * and show less content when element with class "content-hide" is clicked.
  */
 function showHide() {
@@ -52,11 +52,14 @@ function showHide() {
 	
 }
 
-const hamburgerIcon = document.getElementById('hamburger-icon');
 
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
 hamburgerIcon.onclick = toggleMenu;
 
-
+/**
+ * Show and hide menu items when hamburger icon is clicked.
+ */
 function toggleMenu() {
 	const menuItems = document.getElementById('mobile-nav-items');    
 		
