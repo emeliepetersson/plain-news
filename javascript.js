@@ -20,7 +20,7 @@ function showHide(event) {
 	targetContent.classList.toggle('show');
 
 		if (targetContent.classList.contains('show')) {
-			button.textContent = "Hide content";
+			button.textContent = "Hide content ";
 			
 		}
 		else {
@@ -29,22 +29,17 @@ function showHide(event) {
 }
 
 
-
-const hamburgerIcon = document.getElementById('hamburger-icon');
-hamburgerIcon.onclick = toggleMenu;
-
+const hamburgerIcon = document.getElementsByClassName('hamburger-icon');
+for (let i = 0; i < hamburgerIcon.length; i++) {
+	hamburgerIcon[i].onclick= toggleMenu;
+}
 /**
  * Show and hide menu items when hamburger icon is clicked.
  */
-function toggleMenu() {
-	const menuItems = document.getElementById('mobile-nav-items');    
-		
-		if(menuItems.style.display == "none") { // if menuItems is hidden, show it.
-		  menuItems.style.display = "block";
-		}
-		else { // if is menuItems is displayed, hide it.
-		  menuItems.style.display = "none";
-		}
+function toggleMenu(event) {
+	const menuItems = event.currentTarget.parentElement.querySelector('.mobile-nav-items');
+
+	menuItems.classList.toggle('show-menu');
 }
 
 

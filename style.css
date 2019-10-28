@@ -55,15 +55,18 @@ nav img{
 .desktop {
     display: none;
 }
-#mobile-nav-items {
+.mobile-nav-items {
     display: none;
-    text-align: left;
-    padding-top: 1em;
-    margin: 0;
 }
-#mobile-nav-items ul{
+.show-menu  ul{
     padding-left:0;
     font-size: 1.5em;
+    text-align: left;
+}
+.show-menu {
+    display: inline-block;
+    padding-top: 1em;
+    margin: 0;
 }
 article {
     background-color: white;
