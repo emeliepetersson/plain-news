@@ -16,7 +16,7 @@ require __DIR__.'/header.php';
             <?php endforeach; ?>
         </ul>
     </nav>
-</header>
+</header><!-- End main header -->
 
 <main class="categories">
 <?php foreach ($articles as $article) : ?>
