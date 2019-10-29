@@ -1,5 +1,6 @@
+'use strict';
 
-// Show and hide content when button is clicked.
+// Function toggles between class names to show/hide content
 function showHide(event) {
 
 	const targetContent = event.currentTarget.parentElement.querySelector('.article-content');
@@ -23,7 +24,7 @@ for (let i = 0; i < contentShow.length; i++) {
 }
 
 
-// Show and hide menu items when hamburger icon is clicked.
+// Function toggles between class names to show/hide menu items.
 function toggleMenu(event) {
 	const menuItems = event.currentTarget.parentElement.querySelector('.mobile-nav-items');
 
