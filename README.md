@@ -43,5 +43,7 @@ The news feed items should be ordered based on the published date, so the latest
 - Julia Karlsson
 - Camilla Kylmänen
 
+## Code review
+
 ## License
 The MIT License. See [LICENSE](https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
