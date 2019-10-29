@@ -24,7 +24,8 @@ require __DIR__.'/header.php';
         <header class="article-header">
             <h1><?= $article['title'] ?></h1>
             <div>
-                <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> <div><img src="images/like.png" alt="thumbs up like icon"> <?= $article['like_counter'] ?></div> 
+                <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> 
+                <div><img src="images/like.png" alt="thumbs up like icon" width="20px"> <?= $article['like_counter'] ?></div> 
             </div>
         </header>
         <p class="article-content">

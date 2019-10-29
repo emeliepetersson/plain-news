@@ -20,8 +20,8 @@ require __DIR__.'/header.php';
         <h1><?= $article['title'] ?></h1>
         <div>
             <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> 
-            <div><img src="images/like.png" alt="thumbs up like icon" class="like"> <?= $article['like_counter'] ?></div>
             <div><a href="<?= $article['category'] ?>.php"><?= $article['category'] ?></a></div>
+            <div><img src="images/like.png" alt="thumbs up like icon" class="like" height="20px"> <?= $article['like_counter'] ?></div>
         </div>
     </header>
     <p class="article-content">

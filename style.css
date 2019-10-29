@@ -17,7 +17,7 @@ button {
 a, button {
     color: rgb(212, 25, 25);
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 button:active {
     border: none;
@@ -45,6 +45,9 @@ a:hover, button:hover {
     font-family: 'Karla', sans-serif;
     font-size: 3em;
 }
+.main-header a {
+    font-size: 1.4em;
+}
 nav {
     padding: 1em;
 }
@@ -54,6 +57,7 @@ nav img{
 .desktop {
     display: none;
 }
+/* Mobile nav menu */
 .mobile-nav-items {
     display: none;
 }
@@ -88,15 +92,15 @@ article {
     padding: 1em 1em 0 1em;
 }
 .article-header a {
-    font-size: 1em;
     font-style: italic;
 }
 p {
     padding: 0 0.7em 1em;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
+/* Show more or less content -> classes */
 .article-content {
-    height: 4.7em;
+    height: 4.6em;
     overflow: hidden;
 }
 .article-content.show {
@@ -139,7 +143,7 @@ article figure > img {
     }
     .desktop ul li {
         padding: 0 0.5em;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     /* Articles */
@@ -167,7 +171,6 @@ article figure > img {
     /* Articles */ 
     .categories article {
         width: 50%;
-        margin: 2em auto;
     }
 }
 
