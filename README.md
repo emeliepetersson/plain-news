@@ -50,4 +50,4 @@ The news feed items should be ordered based on the published date, so the latest
 ## Code review
 
 ## License
-The MIT License. See [LICENSE](https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
+See [The MIT License](https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
