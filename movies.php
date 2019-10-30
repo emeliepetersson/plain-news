@@ -30,7 +30,7 @@ require __DIR__.'/header.php';
                 </div> 
                 <div>
                     <img class="like-icon" src="images/like.png" alt="thumbs up like icon"  width="20px"> 
-                    <input type="text" class="likes" value="<?= $article['like_counter'] ?>">
+                    <input type="text" readonly="readonly" class="likes" value="<?= $article['like_counter'] ?>">
                 </div> 
             </div>
         </header>
