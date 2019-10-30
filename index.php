@@ -21,7 +21,10 @@ require __DIR__.'/header.php';
         <div>
             <div><?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?></div> 
             <div><a href="<?= $article['category'] ?>.php"><?= $article['category'] ?></a></div>
-            <div><img src="images/like.png" alt="thumbs up like icon" class="like" height="20px"> <?= $article['like_counter'] ?></div>
+            <div>
+                <img class="like-icon" src="images/like.png" alt="thumbs up like icon"  width="20px"> 
+                <input type="text" class="likes" value="<?= $article['like_counter'] ?>">
+            </div>
         </div>
     </header>
     <p class="article-content">

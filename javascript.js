@@ -38,9 +38,15 @@ for (let i = 0; i < hamburgerIcon.length; i++) {
 }
 
 
-//https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number
+//Increment amount of likes on click
+function likeCounter(event) {
+	const likeInput = event.currentTarget.parentElement.querySelector('.likes');
+	let i = likeInput.value;
+	likeInput.value = ++i;
+}
 
-//let i = 0;
-//function buttonClick() {
-//	document.getElementById('inc').value = ++i;
-//}
+// Add onclick event to like-icon.
+const likeButton = document.getElementsByClassName('like-icon');
+for (let i = 0; i < likeButton.length; i++) {
+	likeButton[i].onclick= likeCounter;
+}

@@ -39,8 +39,6 @@ array_walk_recursive($articles, 'convertStrToInt');
                 </div>
             </nav>
             <div>
-            <!--- <button onclick="buttonClick()">Click Me</button>
-            <input type="text" id="inc" value="0"></input> -->
             <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">
             <h1>News feed</h1>
             </div>

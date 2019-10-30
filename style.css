@@ -28,6 +28,10 @@ a:hover, button:hover {
 .active {
     color: black;
 }
+input {
+    border: none;
+    font-size: 0.9em;
+}
 
 /* Main header */
 .main-header {
