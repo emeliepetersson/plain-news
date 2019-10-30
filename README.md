@@ -38,8 +38,9 @@ The news feed items should be ordered based on the published date, so the latest
 - Open the index.php file in your browser.
 
 ## Extra
-- Hide and show content/menu items with javascript function.
+- Hide and show content/menu items with javascript.
 - Add categories and return all unique categories with php function.
+- Add a SQLite database, use PDO to connect to the database and fetch data. 
 
 ## Testers
 - Julia Karlsson
