@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @return integer
  */
 function dateCompare(array $a, array $b) :int {
-    $timeOne = strtotime($a['published_date']);
-    $timeTwo = strtotime($b['published_date']);
-    return $timeTwo - $timeOne;
+    $dateOne = strtotime($a['published_date']);
+    $dateTwo = strtotime($b['published_date']);
+    return $dateTwo - $dateOne;
 }    
 
 
@@ -47,4 +47,20 @@ function getUniqueCategories(array $articles):array {
     }
     $uniqueCategories = array_unique($categories);
     return $uniqueCategories;
+}
+
+
+
+/**
+ * Callback function to array_walk_recursive(), change the 
+ * $item of $key containing 'id', 'author_id' and 'like_counter' into integer. 
+ *
+ * @param string $item
+ * @param string $key
+ * @return void
+ */
+function convertStrToInt(string &$item, string $key)
+{
+    if($key == 'id' && 'author_id' && 'like_counter')
+        $item = (int)$item;
 }

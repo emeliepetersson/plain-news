@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/data.php';
+require __DIR__.'/db_data.php';
 require __DIR__.'/functions.php';
 
 //Usort will invoke the function dateCompare again and again, each time comparing two elements from the 
@@ -10,6 +10,9 @@ usort($articles, 'dateCompare');
 
 $uniqueCategories = getUniqueCategories($articles);
 
+//Apply the callback function convertStrToInt to each element of the array.
+array_walk_recursive($authors, 'convertStrToInt');
+array_walk_recursive($articles, 'convertStrToInt');
 
 ?>
 <!DOCTYPE html>
@@ -36,6 +39,8 @@ $uniqueCategories = getUniqueCategories($articles);
                 </div>
             </nav>
             <div>
+            <!--- <button onclick="buttonClick()">Click Me</button>
+            <input type="text" id="inc" value="0"></input> -->
             <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">
             <h1>News feed</h1>
             </div>

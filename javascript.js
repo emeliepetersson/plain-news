@@ -38,3 +38,9 @@ for (let i = 0; i < hamburgerIcon.length; i++) {
 }
 
 
+//https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number
+
+//let i = 0;
+//function buttonClick() {
+//	document.getElementById('inc').value = ++i;
+//}
