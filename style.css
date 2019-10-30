@@ -65,9 +65,10 @@ nav img{
 .mobile-nav-items {
     display: none;
 }
-.show-menu  ul{
+.show-menu ul, li{
     padding-left:0;
-    font-size: 1.5em;
+    padding-bottom: 0.2em;
+    font-size: 1em;
     text-align: left;
 }
 .show-menu {
