@@ -38,6 +38,8 @@ The news feed items should be ordered based on the published date, so the latest
 - Open the index.php file in your browser.
 
 ## Extra
+- Hide and show content/menu items with javascript function.
+- Add categories and return all unique categories with php function.
 
 ## Testers
 - Julia Karlsson

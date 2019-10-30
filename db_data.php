@@ -22,6 +22,7 @@ $articles = $sqlArticles->fetchAll(PDO::FETCH_ASSOC);
 
 $sqlAuthors = $pdo->query('SELECT * FROM authors'); 
 $authors = $sqlAuthors->fetchAll(PDO::FETCH_ASSOC); 
+ die(var_dump($articles));
 
 echo "<pre>";
 print_r($articles);
