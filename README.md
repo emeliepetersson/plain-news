@@ -48,6 +48,10 @@ The news feed items should be ordered based on the published date, so the latest
 - Camilla Kylmänen
 
 ## Code review
+By Andreas Pandzic:
+- You repeat your header code och foreach loop inside your article tags, in index.php, comics.php, podcast.php and movies.php.
+- Try make one array by joining tables in your database query, instead of making two separate arrays for each table.
+- You use inline styling in your img tags, this isn't consistent with your other css styling.
 
 ## License
 See [The MIT License](https://github.com/emeliepetersson/plain-news/blob/master/LICENSE).
