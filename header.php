@@ -39,7 +39,9 @@ array_walk_recursive($articles, 'convertStrToInt');
                 </div>
             </nav>
             <div>
-            <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">
-            <h1>News feed</h1>
+                <img src="images/MARVEL.png" alt="Marvel icon" class="marvel-icon">
+                <h1>News feed</h1>
             </div>
-            
+            <nav class="desktop">
+                <ul>
+                <li><a href="index.php">Home</a></li>
