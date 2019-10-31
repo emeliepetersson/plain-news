@@ -3,8 +3,8 @@
 require __DIR__.'/header.php';
 
 ?>
-
-                <?php foreach ($uniqueCategories as $category) : ?>
+            <li><a href="index.php">Home</a></li>
+            <?php foreach ($uniqueCategories as $category) : ?>
                 <?php if ($category === 'Comics') : ?>
                     <li><a href="<?= $category; ?>.php" class="active"><?= $category; ?></a></li>
                 <?php else : ?>

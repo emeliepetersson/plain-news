@@ -44,4 +44,3 @@ array_walk_recursive($articles, 'convertStrToInt');
             </div>
             <nav class="desktop">
                 <ul>
-                <li><a href="index.php">Home</a></li>
