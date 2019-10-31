@@ -11,7 +11,9 @@ ul {
     list-style-type: none;
 }
 button {
-    all: unset;
+    -webkit-appearance: none;
+    background: unset;
+    border: none;
     margin: 1em;
 }
 a, button {
