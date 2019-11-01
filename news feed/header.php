@@ -21,7 +21,7 @@ array_walk_recursive($articles, 'convertStrToInt');
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Marvel news</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styling/style.css">
         <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri:100|Karla|Raleway|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri:100|Karla|Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
     </head>
