@@ -50,7 +50,6 @@ function getUniqueCategories(array $articles):array {
 }
 
 
-
 /**
  * Callback function to array_walk_recursive(), change the 
  * $item of $key containing 'id', 'author_id' and 'like_counter' into integer. 

@@ -12,11 +12,11 @@ require __DIR__.'/header.php';
 </header> <!-- End main header -->
 
 <main class="main-grid-index">
-<?php foreach ($articles as $article) : ?>
-    <article>
-        <?php require __DIR__.'/article-content.php' ?>
-    </article>
-<?php endforeach; ?>
+    <?php foreach ($articles as $article) : ?>
+        <article>
+            <?php require __DIR__.'/article-content.php' ?>
+        </article>
+    <?php endforeach; ?>
 </main>
         
 <?php

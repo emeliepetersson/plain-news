@@ -7,8 +7,19 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+h1 {
+    margin-bottom: 0.5em;
+    font-family: 'Karla', sans-serif;
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5em;
+}
 ul {
     list-style-type: none;
+}
+ul li {
+    font-size: 1em;
 }
 button {
     -webkit-appearance: none;
@@ -20,9 +31,6 @@ a, button {
     color: rgb(212, 25, 25);
     text-decoration: none;
     font-size: 1em;
-}
-button:active {
-    border: none;
 }
 a:hover, button:hover {
     color: rgb(185, 146, 146);
@@ -36,7 +44,7 @@ input {
     outline: none;
 }
 
-/* Main header */
+/* MAIN HEADER */
 .main-header {
     border-bottom: 2px solid rgba(216, 213, 213, 0.699);
     background-color: white;
@@ -46,11 +54,6 @@ input {
 }
 .main-header div img {
     padding: 0;
-}
-.main-header div h1 {
-    margin-bottom: 0.5em;
-    font-family: 'Karla', sans-serif;
-    font-size: 3em;
 }
 .main-header a {
     font-size: 1.4em;
@@ -71,16 +74,14 @@ nav img{
 .show-menu ul, li{
     padding-left:0;
     padding-bottom: 0.2em;
-    font-size: 1em;
     text-align: left;
 }
 .show-menu {
     display: inline-block;
     padding-top: 1em;
-    margin: 0;
 }
 
-/* Articles */
+/* ARTICLES */
 article {
     background-color: white;
     margin: 1em;
@@ -96,7 +97,7 @@ article {
     border-bottom: 1px solid black;
     margin: 0.5em 0 1em 1.4em;
 }
-.article-header h1 {
+.article-header h2 {
     padding: 1em 1em 0 1em;
 }
 .article-header a {
@@ -105,9 +106,12 @@ article {
 .like-icon {
     width: 20px;
 }
-p {
-    padding: 0 0.7em 1em;
+article p {
+    padding: 0 1.2em 1em;
     font-size: 1.1em;
+}
+.article-img {
+    width: 100%;
 }
 /* Toggle between these classes to show more or less content */
 .article-content {
@@ -120,12 +124,8 @@ p {
 .content-hide {
     display: none;
 }
-article figure > img {
-    width: 100%;
-}
 
-
-/* Media Queries */
+/* LARGER SCREENS */
 @media only screen and (min-width: 700px) {
     .main-grid-index {
         display: grid;
@@ -154,22 +154,19 @@ article figure > img {
     }
     .desktop ul li {
         padding: 0 0.5em;
-        font-size: 1em;
     }
 
     /* Articles */
-    figure {
+    article {
+        height: 95%;
+    }
+    .main-grid-index figure {
         height: 15em;
         overflow: hidden;
-        margin: 0;
-        padding: 0;
     }
     .categories article {
         width: 80%;
         margin: 2em auto;
-    }
-    p {
-        padding: 0 1em 1em;
     }
 }
 
