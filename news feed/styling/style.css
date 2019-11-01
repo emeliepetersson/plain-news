@@ -136,7 +136,7 @@ article p {
     /* Main header */
     .mobile {
         display: none;
-    }    
+    }
     .main-header div {
         display: flex;
         justify-content: center;
@@ -157,12 +157,13 @@ article p {
     }
 
     /* Articles */
-    article {
-        height: 95%;
-    }
     .main-grid-index figure {
         height: 15em;
         overflow: hidden;
+        display: flex;
+    }
+    figure img {
+      align-self: center;
     }
     .categories article {
         width: 80%;
@@ -175,7 +176,7 @@ article p {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* Articles */ 
+    /* Articles */
     .categories article {
         width: 50%;
     }
