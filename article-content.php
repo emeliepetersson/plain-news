@@ -1,14 +1,14 @@
 <header class="article-header">
     <h1><?= $article['title'] ?></h1>
+    <div>
         <div>
-            <div>
-                <?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?>
-            </div> 
-            <div>
-                <img class="like-icon" src="images/like.png" alt="thumbs up like icon"  width="20px"> 
-                <input type="text" readonly="readonly" class="likes" value="<?= $article['like_counter'] ?>">
-            </div> 
-        </div>
+            <?= getName($article['author_id'], $authors). " " . $article['published_date'] . " " ?>
+        </div> 
+        <div>
+            <img class="like-icon" src="images/like.png" alt="thumbs up like icon"> 
+            <input type="text" readonly="readonly" class="likes" value="<?= $article['like_counter'] ?>">
+        </div> 
+    </div>
 </header>
 <p class="article-content">
     <?= $article['content']; ?>
