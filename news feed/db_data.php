@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 
 
-$database = 'sqlite:'.__DIR__ .'/plain_news.sqlite3';
+$database = 'sqlite:'.__DIR__ .'/database/plain_news.sqlite3';
 
 $pdo = new PDO("$database"); //Creates a PDO instance representing a connection to a database
 
